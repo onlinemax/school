@@ -74,5 +74,5 @@ SyntaxError: invalid syntax
 >>> print(2131325 % -100)
 -75
 >>> # the answer i s-75
->>> # when we do the remainder of a negative number y % -x the answer is simply x - y % x
+>>> # when we do the remainder of a negative number y % -x the answer is simply -(x - y % x)
 >>> 
