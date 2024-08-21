@@ -1,1 +1,3 @@
-print("Hello World")
+def __main__():
+    print("allo")
+__main__()
