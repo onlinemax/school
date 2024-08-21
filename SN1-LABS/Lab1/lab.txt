@@ -1,0 +1,78 @@
+Python 3.9.10 (tags/v3.9.10:f2f3f53, Jan 17 2022, 15:01:48) [MSC v.1929 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> print("allo")
+allo
+>>> print("The number is", 100)
+The number is 100
+>>> print(1e2, 100e0)
+100.0 100.0
+>>> print(int("-10"))
+-10
+>>> print(len("oxymoron") * 4)
+32
+>>> print(2-7, abs(2-7))
+-5 5
+>>> print(1 / 7, round( 1 / 7, 3))
+0.14285714285714285 0.143
+>>> value - 5
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    value - 5
+NameError: name 'value' is not defined
+>>> value = 5
+>>> 
+>>> value + 2
+7
+>>> value - 2
+3
+>>> -value
+-5
+>>> value * -2
+-10
+>>> value / 2
+2.5
+>>> value // 2
+2
+>>> value % 2
+1
+>>> value ** 2
+25
+>>> value ** -2
+0.04
+>>> value 2 ** 2 ** 3
+SyntaxError: invalid syntax
+>>> value + 2 * value - 2
+13
+>>> 2 ** 2 ** 3
+256
+>>> (value + 2) * (value - 2)
+21
+>>> 2 ** 2 ** 3
+256
+>>> x = -5
+>>> y = 2
+>>> print(min(x, y))
+-5
+>>> print(max(x, y))
+2
+>>> # min gives us the most little number of both x and y and max do the opposite
+>>> x = 1 / 3
+>>> y = 2 / 3
+>>> print(round(x), round(y))
+0 1
+>>> print(round(x, 2), round(y, 2))
+0.33 0.67
+>>> print(x, y)
+0.3333333333333333 0.6666666666666666
+>>> # the number rounded at a certain precision. No it doesn't change the value of the variable just returns a new one
+>>> print(2131325 % 2)
+1
+>>> # this tell me if my student Id is odd or even
+>>> print(2131325 % 100)
+25
+>>> # the answer is 25
+>>> print(2131325 % -100)
+-75
+>>> # the answer i s-75
+>>> # when we do the remainder of a negative number y % -x the answer is simply x - y % x
+>>> 
