@@ -13,4 +13,4 @@ def getNumber(s: str, index: int = 0):
 
 
 x = input()
-print(f"The number is {getNumber(x)}")
+print(f"The number is {getNumber(x)[1]}")
