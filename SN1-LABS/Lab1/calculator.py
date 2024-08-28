@@ -11,6 +11,7 @@ def getNumber(s: str, index: int = 0):
         i+=1
     return [i, float(s[index:i])]
 
-
-x = input()
-print(f"The number is {getNumber(x)[1]}")
+while (True):
+    print("Enter the following for each cases: ")
+    s = "*********************************"
+    
