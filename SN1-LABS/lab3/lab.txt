@@ -1,0 +1,65 @@
+1.
+2431325 * 2 = 4862650 
+
+2431325 + 2 * 5 - 2431325 = 10
+
+(2431325 + 2 ) * (5 - 2431325) =  -5911333961640
+
+2431325 ** 2 =5911341255625
+
+2431325 ** 0.5 = 1559.2706628420865
+
+2 ** -2 = 0.25
+2 ** 3 ** 2 = 512
+
+(2**3)**2 = 64
+
+2.
+1/2  = 0.5
+10/2 = 5.0
+10/4.0 = 2.5
+10.5 / -2.0 = -5.25
+3.
+
+1 // 2 = 0
+10 // 2 = 5
+10 // 4.0 = 2.0
+10.5 / -2.0 = 5.0
+
+4.
+
+10 % 2 = 2
+10 % 3 = 1
+-10 % 3 = 2
+10 % -4 = -2
+10.5 % 2.0 = 0.5
+9.995 % 1 = 0.995
+
+5.
+1 > 0 == True
+-2 < -1 == True
+1 <= 0 == False
+1 >= 1 == True
+1 == -1 == False
+5 != 4.9 == True
+6. 
+"back" + "yard" = "backyard"
+2 * "Ha" = "HaHa"
+"=" * 64 = '================================================================'
+"no" in "Marianopolis" == True
+"on" in "Marianopolis" == False
+"apricot" < "peach" == True
+7.
+3 < 3.141593 == True # 3 is effectively less than 3.14...
+1000 == 1e3 == True # 1000 is equal to 1e3 which is 10**3 which is 1000
+10**309 > 1e308 = True # Since 10**309 < 1e308 => 10*309 < 10**308 which yield true 
+10**310 > 1e309 = False # It is because 1e309 is a float and is greater than the maximum number expressed by float it would be changed to infinity so that becomes 10**309 > inf which is False
+8.
+abs(2 * -7) + 3 = 17
+min(max(4, 9), 11) = 9
+round(2/3, 2) = 0.67
+round(2/3) = 1
+9.
+(a) n % 2 == 0
+(b) (19**2 + 420**2)**(1/2) = 420.42954225410944
+(c) 12.011 * 6 + 1.008 * 12 + 15.999 * 6 = 180.156
