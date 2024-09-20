@@ -1,11 +1,13 @@
 Linear search: 
-1. 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22
-2. They all repeat the length of the list times so if a list as 4 element it will search 4 times
+1. 0 1 2 3 4 5 6 7 8
+2. It will go from 0 to the right index of the element.
 3. It doesn't matter if you shuffle the list it always find it right
 Binary search:
 1. 
-    i: 0 j 24 k 12
-    i: 0 j 11 k 5
-    i: 6 j 11 k 8
-2. Each times that the loop is searching an number it go at the middle of the list and if it is the number it returns but if the element at the middle is less than what we are searching it searches a sublist of the list starting from i to the middle - 1 or from the middle to j. Each times then it halfes the list till it find the number at the middle. So if the list length is 18 and middle is not the search number it halfes the list to 9 and then to 4 2 1. So in the worst case scenario each time that we search the list we divide by the list two and by two until the list is less then one. so for an n list we go n / 2, n / 4, n / 8, n / 2^k until 2^k > n so to know how much iteration we need to know k. this gives us 2^k > n then k > log_2 (n) so we iterate at maximum log_2 (n) times until we find the number.
+    i: 0 j: 23 k: 11
+    i: 0 j: 10 k: 5
+    i: 6 j: 10 k: 8
+    i: 6 j: 7 k: 6
+    i: 7 j: 7 k: 7
+2. Each times that the loop is searching an number it go at the middle of the list and if it is the number, it returns but if the element at the middle is less than what we are searching it searches in a sublist of the list starting from i to the middle - 1 or from the middle to j if middle is greater. In simple terms, at each iterations we divide the list in 2 part until we find the number at the middle. So if the list length is 18 and middle is not the search number it halfes the list to 9 and then to 4 2 1. So in the worst case scenario each time that we search the list we divide by the list two and by two until the list is less then one. so for an n list we go n / 2, n / 4, n / 8, n / 2^k until 2^k > n so to know how much iteration we need to do we need to know k. This gives us 2^k > n then k > log_2 (n) so we iterate at maximum log_2 (n) times until we find the number.
 3. if the list list isn't sorted the algorithm will be useless, indeed to know which sublist to go for we look in the element at the middle. if the element is greater that the one at the middle we know to look at the right of the list because in a sorted list every element at index i is always less or equal than the element at index + 1 and if the element is less than the other one we know to look at the left part of the sublist. but if the list isn't ordered than it won't satisfies the ordered list property and we cannot know if the element is at the left or right of the array.
