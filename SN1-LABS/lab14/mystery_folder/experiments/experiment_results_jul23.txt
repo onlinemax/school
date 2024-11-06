@@ -1,0 +1,2 @@
+Experimental results show that the unknown variable has been successfully identified.
+We believe this could lead to an improved version of the formula, but more tests are needed.
