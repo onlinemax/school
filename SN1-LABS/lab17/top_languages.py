@@ -15,6 +15,7 @@ def top_languages_data():
 lists and returns that data structure. This function is missing two crucial
 lines. You must modify this function to make it work!'''
     data=[]
+    fp = open("top_languages.csv")
     fp.readline() # skip first line (header line)
     for line in fp:
         line = line.strip().split(",")    # strip off the newline, then split by commas
@@ -22,6 +23,7 @@ lines. You must modify this function to make it work!'''
             line[ix] = int(line[ix])
         data.append(line)
     fp.close() # close file
+    return data
 
 def sort_2_lists(source, target):
     '''Sort the source list. Then sort the target list based on ordering of the source
@@ -37,4 +39,25 @@ def sort_2_lists(source, target):
     return source_sorted, target_sorted
 
 # Main section of code. Add your lines of code below to generate the plots
+def extract(data, column_number):
+    x = [0] * len(data)
+    for i in range(len(data)):
+        x[i] = data[i][column_number]
+    return x
+
+data = top_languages_data()
+x, y = extract(data, LANGUAGE), extract(data, TOTAL_N) 
+# Verification of validity
+for i in range(len(data)):
+    assert(x[i] == data[i][LANGUAGE]) 
+    assert(y[i] == data[i][TOTAL_N]) 
+
+y, x = sort_2_lists(y, x)
+plt.barh(x, y,)
+plt.ylabel("Language")
+plt.xlabel("Estimated total number of speakers (in billions)")
+plt.suptitle("Top 10 world languages by total number of speakers")
+plt.rcParams.update({'font.size': 14})
+plt.tight_layout()
+plt.show()
 # requested in the lab instructions.
