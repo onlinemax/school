@@ -1,3 +1,0 @@
-It turns out that the results from the July 23 experiment were tainted by a data entry error. The resulting formula was totally incorrect. The research assistants have been warned to be more careful. They have been encouraged to take a programming class to learn how to automate data entry in the future. The head scientist will collect more data in another experiment. 
-
-Future analyses may lead to a new formula.
